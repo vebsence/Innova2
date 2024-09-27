@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    padding: 4rem;
+    background-color: rgb(251, 251, 251);
+    margin: 40px auto 0px auto;
+    border-radius: 25px;
+    flex-direction: column;
+    width: 956px;
+    row-gap: 25px;
+}
+
+.form-section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+}
+
+.form-card {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+label {
+    font-size: 1.4rem;
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+input[type=submit], a {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+input[type=submit]:hover, a:hover {
+    color: white;
+    background-color: black;
+}

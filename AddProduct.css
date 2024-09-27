@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.productinfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.productinfo label {
+    align-self: center;
+    font-weight: bold;
+}
+
+.productinfo input[type="text"],
+.productinfo input[type="number"],
+.productinfo select,
+.productinfo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.productinfo textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.productinfo input[type="file"] {
+    border: none;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.productinfo input[type="file"]:nth-child(odd) {
+    margin-bottom: 10px;
+}
+
+.productinfo input[type="file"]:nth-child(even) {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .productinfo {
+        grid-template-columns: 1fr;
+    }
+
+    .productinfo label {
+        margin-bottom: 5px;
+    }
+
+    .productinfo input[type="file"] {
+        margin-bottom: 15px;
+    }
+}
+
+/*======================*/
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+  
+.opisList {
+    cursor: pointer;
+    -webkit-user-select: none; 
+    user-select: none;
+}
+  
+.opisList::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+  
+.opisList-down::before {
+    transform: rotate(90deg);  
+}
+  
+.nested {
+    display: none;
+}
+  
+.active {
+    display: block;
+}
+
+.toggle-input {
+    margin-right: 10px; 
+}
+
+.text-field {
+    display: none;
+    margin-top: 5px; 
+    margin-left: 20px; 
+}
+
+.toggle-input:checked + .text-field {
+    display: inline-block;
+}
+
+.btn-new-product {
+    padding: 20px 10px;
+    border: none;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
