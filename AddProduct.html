@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/AddProduct.css">
+</head>
+<body>
+    
+    <form method="POST" action="./verifyNewProduct.php" enctype="multipart/form-data">
+    <div class="container">
+        <div class="productinfo">
+            <label>Name</label>
+            <input type="text" name="productName" required>
+            <label>Price</label>
+            <input type="number" name="productPrice" required>
+            <label>Discount</label>
+            <input type="number" name="productDiscount" min="0" max="70" required>
+            </select name="productStock">
+            <label>inStock</label>
+            <select name="inStock">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label>Category</label>
+            <select name="productCategory">
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="Power-Supply">Power Supply</option>
+                <option value="Monitor">Monitor</option>
+                <option value="Periferii">Periferii</option>
+                <option value="Cases">Cases</option>
+                <option value="Data">Data</option>
+            </select>
+            <label>Description</label>
+            <textarea name="productDesc" required></textarea>
+            <label>Images</label>
+            <input type="file" name="images[]" id="filechooser">
+            <input type="file" name="images[]" id="filechooser">
+            <input type="file" name="images[]" id="filechooser">
+            <input type="file" name="images[]" id="filechooser">
+        </div>
+
+            <ul id="myUL">
+            <li><span class="opisList">Опис</span>
+              <ul class="nested">
+                <li>
+                  <input type="checkbox" class="toggle-input" name="brand" checked>Бренд
+                  <input type="text" class="text-field" name="brand-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="series" checked>Серија
+                  <input type="text" class="text-field" name="series-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="modelNumber" checked>Број на модел
+                  <input type="text" class="text-field" name="modelnumber-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="weight" checked>Тежина
+                  <input type="text" class="text-field" name="weight-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="dimensions" checked>Димензии на производот
+                  <input type="text" class="text-field" name="dimensions-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="color" checked>Боја
+                  <input type="text" class="text-field" name="color-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="manufactuer" checked>Производител
+                  <input type="text" class="text-field" name="manufactuer-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="origin" checked>Земја на потекло
+                  <input type="text" class="text-field" name="origin-value">
+                </li>
+                <li>
+                  <input type="checkbox" class="toggle-input" name="firstDate" checked>Прво достапен на датум
+                  <input type="text" class="text-field" name="firstDate-value">
+                </li>
+                <li><span class="opisList">More</span>
+                  <ul class="nested">
+                    <li>
+                      <input type="checkbox" class="toggle-input" name="energy">Извор на енергија
+                      <input type="text" class="text-field" name="energy-value">
+                    </li>
+                    <li>
+                      <input type="checkbox" class="toggle-input" name="volts">Волти
+                      <input type="number" class="text-field" name="volts-value">
+                    </li>
+                    <li>
+                      <input type="checkbox" class="toggle-input" name="memorySpeed">Брзина на меморија
+                      <input type="text" class="text-field" name="memorySpeed-value">
+                    </li>
+                    <li>
+                      <input type="checkbox" class="toggle-input" name="usb3">Број на USB 3.0 порти
+                      <input type="number" class="text-field" name="usb3-value">
+                    </li>
+                    <li>
+                      <input type="checkbox" class="toggle-input" name="usb2">Број на USB 2.0 порти
+                      <input type="number" class="text-field" name="usb2-value">
+                    </li>
+                    <li><span class="opisList">Процесор</span>
+                        <ul class="nested">
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="processorBrand">Бренд на процесор
+                              <input type="text" class="text-field" name="processorBrand-value">
+                            </li>
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="numProcess">Number of Processors
+                              <input type="number" class="text-field" name="numProcess-value">
+                            </li>
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="typeMem">Тип на меморија на компјутер
+                              <input type="text" class="text-field" name="typeMem-value">
+                            </li>
+                          </ul>
+                    </li>
+                    <li><span class="opisList">Disks</span>
+                      <ul class="nested">
+                        <li>
+                          <input type="checkbox" class="toggle-input" name="HardDD">Hard Drive
+                          <input type="text" class="text-field" name="HardDD-value">
+                        </li>
+                        <li>
+                          <input type="checkbox" class="toggle-input" name="HardPlat">Hardware Platform
+                          <input type="text" class="text-field" name="HardPlat-value">
+                        </li>
+                        <li>
+                          <input type="checkbox" class="toggle-input" name="HardFlash">Flash Memory Size
+                          <input type="text" class="text-field" name="HardFlash-value">
+                        </li>
+                        <li>
+                          <input type="checkbox" class="toggle-input" name="HardInterface">Hard Drive Interface
+                          <input type="text" class="text-field" name="HardInterface-value">
+                        </li>
+                      </ul>
+                    <li><span class="opisList">GPU</span>
+                        <ul class="nested">
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="gpuRAM">Graphics Card Ram Size
+                              <input type="number" class="text-field" name="gpuRAM-value">
+                            </li>
+                          </ul>
+                    </li>
+                    <li><span class="opisList">Motherboard</span>
+                        <ul class="nested">
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="motherboardRAM">RAM
+                              <input type="number" class="text-field" name="motherboardRAM-value">
+                            </li>
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="matherboardType">Wireless Type
+                              <input type="text" class="text-field" name="matherboardType-value">
+                            </li>
+                          </ul>
+                    </li>
+                    <li><span class="opisList">Monitor</span>
+                        <ul class="nested">
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="screenSize">Големина на екран
+                              <input type="text" class="text-field" name="screenSize-value">
+                            </li>
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="screenRes">Резолуција на екранот
+                              <input type="text" class="text-field" name="screenRes-value">
+                            </li>
+                            <li>
+                              <input type="checkbox" class="toggle-input" name="screenMax">Максимална резолуција на екранот
+                              <input type="text" class="text-field" name="screenMax-value">
+                            </li>
+                          </ul>
+                    </li>
+                  </ul>
+                </li>  
+              </ul>
+            </li>
+          </ul>
+          <button type="submit" class="btn-new-product">Add New Product</button>
+        </div>
+        </form>
+
+    <script>
+        var toggler = document.getElementsByClassName("opisList");
+        var i;
+        
+        for (i = 0; i < toggler.length; i++) {
+          toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("opisList-down");
+          });
+        }
+        </script>
+</body>
+</html>

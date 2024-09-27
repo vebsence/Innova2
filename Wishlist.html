@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/CSS/Cart.css">
+    <link rel="stylesheet" href="/CSS/Header.css">
+</head>
+<body>
+
+    <!-- NAVIGATION MENU -->
+    <header class="header-class">
+        <a href="#" class="logo"><img src="image/NewLogo.png"></a>
+
+        <ul class="navigationmenu">
+            <li><a href="#">home</a></li>
+            <li class="dropdown-list"><a href="./Products HTML/Products.html">products</a>
+                <ul class="dropdown-menu-mine">
+                    <li>Процесори</li>
+                    <li>Графички</li>
+                    <li>Матични</li>
+                    <li>Напојувања</li>
+                    <li>Монитори</li>
+                    <li>Периферии</li>
+                    <li>Куќишта</li>
+                    <li>Дата</li>
+                </ul>
+            </li>
+            
+            <li><a href="#">wishlist</a></li>
+            <li><a href="./Home.html#discounted">Featured</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href=""></a>
+            <a href=""><i class='bx bx-user' ></i></a>
+            <a href="./Cart.html"><i class='bx bx-cart' ></i></a>
+        </div>
+    </header>
+    <!-- NAVIGATION MENU -->
+
+    <section>
+        <div class="pagination">
+            <p>Home > Wishlist</p>
+        </div>
+        <div class="container px-4 py-5 mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-5">
+                    <h4 class="heading">Wishlist</h4>
+                </div>
+                <div class="col-7">
+                    <div class="row text-right">
+                        <div class="col-4">
+                            <h6 class="mt-2">Quantity</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class="mt-2">Price</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row d-flex justify-content-center border-top">
+                <div class="col-5">
+                    <div class="row d-flex">
+                        <div class="book">
+                            <img src="./UPLOADED_IMAGES/2.jpg" class="book-img">
+                        </div>
+                        <div class="my-auto flex-column d-flex pad-left">
+                            <h6 class="mob-text">NVIDIA RTX ASUS 4090</h6>
+                            <p class="mob-text">GPU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-auto col-7">
+                    <div class="row text-right">
+                        <div class="col-4">
+                            <div class="row d-flex justify-content-end px-3">
+                                <p class="mb-0" id="cnt1">1</p>
+                                <div class="d-flex flex-column plus-minus">
+                                    <span class="vsm-text plus">+</span>
+                                    <span class="vsm-text minus">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h6 class="mob-text">$1,459.99</h6>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                            <button class="btn btn-sm btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row d-flex justify-content-center border-top">
+                <div class="col-5">
+                    <div class="row d-flex">
+                        <div class="book">
+                            <img src="./UPLOADED_IMAGES/24 Odyssey G3 (G30D).jpg" class="book-img">
+                        </div>
+                        <div class="my-auto flex-column d-flex pad-left">
+                            <h6 class="mob-text">Odyssey G3
+                            <p class="mob-text">Monitor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-auto col-7">
+                    <div class="row text-right">
+                        <div class="col-4">
+                            <div class="row d-flex justify-content-end px-3">
+                                <p class="mb-0" id="cnt2">1</p>
+                                <div class="d-flex flex-column plus-minus">
+                                    <span class="vsm-text plus">+</span>
+                                    <span class="vsm-text minus">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h6 class="mob-text">$99.99</h6>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                            <button class="btn btn-sm btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="Cart.js"></script>
+</body>
+</html>
