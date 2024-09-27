@@ -1,0 +1,80 @@
+/* Reset some basic elements */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-body {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-container tr {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.table-container td img {
+    width: 10px;
+    height: auto;
+}
+
+.table-container td {
+    vertical-align: middle;
+}
+
+.table-container tr:hover {
+    background-color: #e2e2e2;
+}

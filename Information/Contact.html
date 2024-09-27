@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактирајте Не</title>
+    <link rel="stylesheet" href="../CSS/AboutAndPrivacy.css">
+    <style>
+        .inputfield {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .inputfield input,
+        .inputfield textarea {
+            width: calc(100% - 44px);
+            padding: 10px 20px;
+            border: 1px solid rgb(207, 207, 207);
+            outline: none;
+            font-size: 1.25em;
+            border-radius: 6px;
+            line-height: 35px;
+        }
+
+        .inputfield textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .inputfield span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            pointer-events: none;
+            font-size: 1.25em;
+            transition: 0.35s;
+            color: rgb(170, 170, 170);
+        }
+
+        .inputfield input:valid ~ span,
+        .inputfield input:focus ~ span,
+        .inputfield textarea:valid ~ span,
+        .inputfield textarea:focus ~ span{
+            top: 0;
+            color: rgb(76, 194, 95);
+            transform: translateY(-10px);
+            font-size: 1.19em;
+            padding: 0 10px;
+            background: white;
+        }
+
+        .inputfield input:focus,
+        .inputfield textarea:focus {
+            border-color: rgb(76, 194, 95);
+        }
+
+        #send {
+            background-color: rgb(46, 224, 46);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            width: calc(100% - 40px);
+            height: 50px;
+            font-size: 1.25em;
+            transition: 0.2s;
+            margin-bottom: 20px;
+        }
+
+        #send:hover {
+            cursor: pointer;
+            background-color: rgb(46, 200, 46);
+        }
+
+        .container {
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Контактирајте Не</h1>
+    <div class="inputfield">
+        <input type="text" required>
+        <span>Вашето Име</span>
+    </div>
+    <div class="inputfield">
+        <input type="text" required>
+        <span>Вашата Е-пошта</span>
+    </div>
+    <div class="inputfield">
+        <textarea required></textarea>
+        <span>Вашата Порака</span>
+    </div>
+    <button id="send">Испрати</button>
+</div>
+
+</body>
+</html>

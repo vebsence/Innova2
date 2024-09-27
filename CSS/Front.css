@@ -1,0 +1,138 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+  .TOSContainer {
+    background-color: transparent;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .left {
+    flex: 0 0 60%;
+    background-color: #CAF0F8;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    transform: skew(21deg);
+  }
+  
+  .right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #logo {
+    font-size: 64px;
+    color: navy;
+    position: relative;
+    margin: auto;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-15%);
+  }
+
+  h1, h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+    .buttons {
+        margin-top: 1px;
+    }
+
+    button {
+      font-family: Helvetica;
+        padding: 10px 75px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(60, 70, 255);
+        color: white;
+        font-weight: bold;
+    }
+
+    button:hover {
+        opacity: 0.9;
+        background-color: hex(#2964aa);
+    }
+
+    .animatedContainer {
+        width: 100%;
+        display: flex;
+        white-space: nowrap; 
+        overflow: hidden;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .animated-text {
+        user-select: none;
+        overflow: hidden;
+        white-space: nowrap;
+        opacity: 1;
+        position: relative;
+        margin-left: 20px;
+        display: inline;
+    }
+    
+    .animated-text:before {
+      background-color: red;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+  }
+
+    .animated-text:nth-child(2) {
+        opacity: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      display: flex;
+      
+    }
+
+    .overlay h1 {
+      display: block;
+    }
+
+    .overlay div {
+      display: block;
+    }
+
+    .logo-container {
+      position: absolute;
+      z-index: 2;
+      top: 100px;
+      width: 100%;
+      height: 75px;
+    }
+
+    .logo-helper {
+      width: 50%;
+      height: 100%;
+    }
